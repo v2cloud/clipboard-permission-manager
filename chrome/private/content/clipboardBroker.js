@@ -84,7 +84,7 @@
         chrome.storage.sync.get(origin, function valuesRetrieved(values) {
             callback({
                 'origin'  : origin,
-                'allowed' : (values && values[origin]) || false
+                'allowed' : true
             });
         });
     };
