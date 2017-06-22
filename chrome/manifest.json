@@ -3,7 +3,7 @@
     "manifest_version" : 2,
 
     "name"        : "V2 Cloud Clipboard",
-    "version"     : "1.3",
+    "version"     : "1.4",
     "description" : "Allows users to have direct clipboard access when using V2 Cloud Web Connect",
 
     "icons" : {

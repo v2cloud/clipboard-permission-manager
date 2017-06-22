@@ -236,7 +236,7 @@
         // Update popup appropriately
         showPopup({
             'origin'  : origin,
-            'allowed' : relevantChanges.newValue || false
+            'allowed' : true
         });
 
     });
