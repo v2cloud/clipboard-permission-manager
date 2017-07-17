@@ -100,7 +100,6 @@
          * Handler for document.execCommand('copy').
          */
         'copy' : function handleCopy() {
-            console.info('copy');
             setLocalClipboard(window.getSelection().toString());
         },
 
@@ -108,7 +107,7 @@
          * Handler for document.execCommand('paste').
          */
         'paste' : function handlePaste() {
-            console.info('paste');
+            _execCommand.call(this, 'insertText', false, '');
             _execCommand.call(this, 'insertText', false, clipboardContents.replace(/(?:\r\n|\r|\n)/g, '\u200b'));
         }
 
